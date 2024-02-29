@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <h1>Rock, Paper, Scissors</h1>
+
+  <div id="app">
+    <div id="top">
+      <h2 id="score">0000</h2>
+      <h2 id="timer">0:30</h2>
+    </div>
+
+    <div id="change">
+      <h3 id="winner"></h3>
+      <h3 id="plus"></h3>
+    </div>
+
+    <div id="bottom">
+
+      <div id="user">
+
+        <div id="user-name-pic">
+          <img src="assets/images/cool.webp" id="user-pfp">
+          <h3 id="user-name">Name</h3>
+        </div>
+
+        <div id="buttons">
+          <img src="assets/images/rock.png" alt="ROCK" class="user-select" id="rock">
+          <img src="assets/images/paper.jpg" alt="PAPER" class="user-select" id="paper">
+          <img src="assets/images/scissors.jpg" alt="SCISSORS" class="user-select" id="scissors">
+        </div>
+
+      </div>
+
+      <div id="byte">
+
+        <div id="byte-name-pic">
+          <img src="assets/images/byte.png" id="byte-pfp">
+          <h3 id="byte-name">Byte</h3>
+        </div>
+
+        <img src="assets/images/dark.png" id="byte-output">
+
+      </div>
+
+    </div>
+
+
+    <div class="modalcontainer">
+
+      <div class="modal">
+        <h1 id="title">Directions</h1>
+        <p id="message">Welcome to Rock, Paper, Scissors! You have 30 seconds to play against Byte. A win gives you
+          +100 points, a draw gives +30 points, while a loss is -50 points. Score as much as you can, then see how you
+          stack
+          against the other competitors when the results pop up. The timer will run once you hit "START," so take a deep
+          breath, get ready, and good luck!</p>
+
+        <div id="scores">
+
+        </div>
+
+        <button id="start">START</button>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
